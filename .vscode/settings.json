@@ -1,0 +1,20 @@
+{
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports.ruff": "explicit",
+            "source.organizeImports": "explicit"
+        }
+    },
+    "ruff.configuration": "${workspaceFolder}/ruff.toml",
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "python.testing.pytestArgs": [
+        "src"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}

@@ -1,0 +1,25 @@
+# Ruff configuration
+line-length = 88
+target-version = "py312"
+
+[lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+]
+
+# Allow unused imports in __init__.py files
+[lint.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[lint.isort]
+force-sort-within-sections = true
+known-first-party = ["app", ".router"]
+
+[format]
+indent-style = "space"
+quote-style = "double"
+docstring-code-line-length = 88  # Define la longitud de línea correcta
